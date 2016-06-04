@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<scenes>
+	<scene name="LevelScene" entity-list="config/level/entities.xml">
+	</scene>
+
+	<scene name="HUD" entity-list="config/hud/entities.xml">
+		<camera name="HUD Camera" type="Camera" size="800,200" />
+	</scene>
+</scenes>

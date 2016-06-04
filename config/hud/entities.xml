@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<entities>
+	<!-- The background of the HUD -->
+	<entity name="Background" active="true">
+		<component type="Transform" position="0,0,0" scale="1,1,1" rotation="0,0,0" active="true"/>
+		<component type="Grid" horizontalLineCount="10" verticalLineCount="10" width="800" height="200" active="true"/>
+		<component type="Sprite" file="images/hud/background.png" active="true"/>
+		<component type="Resizable" active="true"/>
+	</entity>
+
+	<!-- The ship components -->
+	<entity name="Ship Components" active="true">
+		<component type="Transform" position="0,0,0" scale="1,1,1" rotation="0,0,0" active="true"/>
+		<component type="EntityList" entity-list="config/hud/ship-components.xml" active="true"/>
+	</entity>
+</entities>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<entities>
+	<!-- The ship's thruster -->
+	<entity name="Ship Thruster" active="true">
+		<component type="Transform" position="0,0,0" scale="1,1,1" rotation="0,0,0" active="true" />
+		<component type="Sprite" file="images/ship-components/Body.png" active="true" />
+		<component type="Editable" active="true" />
+		<component type="BoxCollider" width="100" height="56" active="true" />
+		<component type="Resizable" active="true" />
+	</entity>
+
+	<!-- The ship's body -->
+	<entity name="Ship Body" active="true">
+		<component type="Transform" position="0,0,0" scale="1,1,1" rotation="0,0,0" active="true" />
+		<component type="Sprite" file="images/ship-components/Thruster.png" active="true" />
+		<component type="BoxCollider" width="100" height="56" active="true" />
+		<component type="Editable" active="true" />
+		<component type="Resizable" keepAspect="true" active="true" />
+	</entity>
+</entities>

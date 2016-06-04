@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<entities>
+	<!-- The drop area -->
+	<entity name="DropArea" active="true">
+		<component type="DropArea" active="true"/>
+	</entity>
+</entities>
