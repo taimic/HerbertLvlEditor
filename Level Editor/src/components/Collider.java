@@ -17,7 +17,9 @@ public abstract class Collider extends Component{
 	
 	// Default constructor
 	public Collider() {
-		this(new Transform());
+		
+//		this(new Transform());
+		ServiceLocator.getService(CollisionSystem.class).add(this);
 	}
 	
 	// Default constructor
@@ -60,7 +62,7 @@ public abstract class Collider extends Component{
 	@Override
 	public Collider update(){
 		// Update transform
-		if(getEntity() != null) setTransform(getEntity().getComponent(Transform.class));
+		setTransform(getEntity().getComponent(Transform.class));
 		return this;
 	}
 	
